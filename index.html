@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <!-- <h1>Calculator</h1> -->
+        <div class="calculator">
+            <input type="text" name="screen" id="input" class="display" placeholder="0" maxlength="2" disabled>
+            <td><button onclick="deletebutton()" class="delete" id="delete">del</button></td>
+            <table>
+                <tr>
+                    <td><button class="operator" onclick="operator('+')">+</button></td>
+                    <td><button class="operator" onclick="operator('-')">-</button></td>
+                    <td><button class="operator" onclick="operator('*')">*</button></td>
+                    <td><button class="operator" onclick="operator('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button class="number" onclick="number('7')">7</button></td>
+                    <td><button class="number" onclick="number('8')">8</button></td>
+                    <td><button class="number" onclick="number('9')">9</button></td>
+                    <td><button class="equal" id="equal" onclick="equal()">=</button></td>
+                </tr>
+                <tr>
+                    <td><button class="number" onclick="number('4')">4</button></td>
+                    <td><button class="number" onclick="number('5')">5</button></td>
+                    <td><button class="number" onclick="number('6')">6</button></td>
+                </tr>
+                <tr>
+                    <td><button class="number" onclick="number('1')">1</button></td>
+                    <td><button class="number" onclick="number('2')">2</button></td>
+                    <td><button class="number" onclick="number('3')">3</button></td>
+                </tr>
+                <tr>
+                    <td><button class="number" onclick="number('0')">0</button></td>
+                    <td><button class="number" onclick="number('.')">.</button></td>
+                    <td><button class="clear" id="clear" onclick="clearResult()">C</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
